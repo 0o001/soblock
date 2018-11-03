@@ -36,8 +36,7 @@ if (localStorage.getItem('off')) {
 
 	setOff();
 	
-}
-else {
+} else {
 
 	setOn();
 	
@@ -50,8 +49,7 @@ chrome.browserAction.onClicked.addListener((tab) => {
 		localStorage.setItem('off', '');
 		setOn();
 		
-    }
-    else {
+    } else {
 
 		localStorage.setItem('off', '1');
 		setOff();
